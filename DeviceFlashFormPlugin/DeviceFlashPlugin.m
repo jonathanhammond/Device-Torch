@@ -16,7 +16,7 @@
 }
 
 + (NSString *)description {
-    return @"Created by Jon Hammond on 10/12/2015";
+    return @"Enable the device Torch and brightness. Created by Jon Hammond justaddmusicmedia.com";
 }
 
 + (NSArray *)nodeClasses {
