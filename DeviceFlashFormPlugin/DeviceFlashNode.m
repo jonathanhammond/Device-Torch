@@ -11,7 +11,7 @@
 @implementation DeviceFlashNode
 
 + (NSString *)defaultName {
-    return @"DeviceFlash";
+    return @"Device Flash";
 }
 
 + (NSString *)processClassName {
@@ -21,10 +21,12 @@
 - (instancetype)init {
     if ((self = [super init]) != nil) {
         // Inputs
-        [self addPort:[[FMRPrimitiveInputPort alloc] initWithName:@"On / Off" uniqueKey:@"Form.onOffInput" defaultValue:[PMRPrimitive primitiveWithBooleanValue:NO]] portGroup:nil];
+        [self addPort:[[FMRPrimitiveInputPort alloc] initWithName:@"Enable" uniqueKey:@"Form.Enable" defaultValue:[PMRPrimitive primitiveWithBooleanValue:NO]] portGroup:nil];
+        
+        
+        [self addPort:[[FMRPrimitiveInputPort alloc] initWithName:@"Brightness" uniqueKey:@"Form.torchBrightness" defaultValue:[PMRPrimitive primitiveWithNumberValue:0.5]] portGroup:nil];
         
         // Outputs
-        [self addPort:[[FMRPrimitiveOutputPort alloc] initWithName:@"Color" uniqueKey:@"Form.colorOutput"] portGroup:nil];
     }
     return self;
 }

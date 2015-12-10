@@ -12,7 +12,7 @@
 @implementation DeviceFlashPlugin
 
 + (NSString *)name {
-    return @"DeviceFlash";
+    return @"Device Flash";
 }
 
 + (NSString *)description {

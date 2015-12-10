@@ -7,10 +7,11 @@
 //
 
 #import <Performer/Performer.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface DeviceFlashPatch : PMRPatch
 
-@property (nonatomic, readonly) PMRPrimitiveInputPort *onOffInput;
-@property (nonatomic, readonly) PMRPrimitiveOutputPort *colorOutput;
+@property (nonatomic, readonly) PMRPrimitiveInputPort *Enable;
+@property (nonatomic, readonly) PMRPrimitiveInputPort *torchBrightness;
 
 @end
